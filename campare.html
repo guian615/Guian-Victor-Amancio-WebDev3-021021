@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<script>
+    function myFunction() {
+        num1 = Number(document.getElementById("first").value);
+        num2 = Number(document.getElementById("second").value);
+
+        if (num1 < num2) {
+            alert(num2);
+        } else if (num1 > num2) {
+            alert(num1);
+        } else if (num1 == num2) {
+            alert(num2 + 1);
+        }
+    }   
+</script>
+
+<head>
+    <p id="demo"></p>
+
+    Enter the First number : <input id="first" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    Enter the Second number: <input id="second" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    <button onclick="myFunction()"
+        style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">Compare</button>
+
+</html>

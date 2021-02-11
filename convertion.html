@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    
+   
+</head>
+
+<body>
+    Enter the Amount in fahrenheit: <input id="calc" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    
+
+    <button onclick="fToC()" style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">Calculate</button>
+    <input id="res" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    <script>
+
+        function fToC(f) {
+            var FatoCe, Celcius;
+            FatoCe=Number(document.getElementById("calc").value);
+            
+            Celcius = (FatoCe - 32) * 5 / 9;
+          
+            document.getElementById("res").value = Celcius;
+ }
+</script>
+</body>
+
+</html>

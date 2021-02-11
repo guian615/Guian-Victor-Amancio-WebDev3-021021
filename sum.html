@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+
+if(a!=b){
+    alert(a+b);
+}else{
+    var c=(a+b);
+    alert(c*3);
+}
+
+}
+</script>
+</head>
+<body>
+Enter the First number : <input id="first" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+Enter the Second number: <input id="second" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+<button onclick="add()"  style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">Add</button>
+
+</body>
+</html>

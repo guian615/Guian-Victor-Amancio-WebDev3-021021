@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Calculator
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <script>
+            function calc() {
+                var number1, number2, operation;
+                number1 = Number(document.getElementById("first").value);
+                number2 = Number(document.getElementById("second").value);
+                const operator = document.getElementById("Calculate").value;
+                document.getElementById("answer").value = operation;
+
+                switch (operator) {
+                    case '+':
+                        result = parseInt(number1) + parseInt(number2);
+                        document.getElementById("answer").value = result;
+                        break;
+
+                    case '-':
+                        result = number1 - number2;
+                        document.getElementById("answer").value = result;
+                        break;
+
+                    case '*':
+                        result = number1 * number2;
+                        document.getElementById("answer").value = result;
+                        break;
+
+                    case '/':
+                        result = number1 / number2;
+                        document.getElementById("answer").value = result;
+                        break;
+
+                    default:
+                        document.getElementById("answer") = ("Invalid Operation");
+                        break;
+                }
+            }
+        </script>
+</head>
+
+<body>
+    Enter the First number : <input id="first" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    Enter the Second number: <input id="second" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    Enter an Operation to be used: <input id="Calculate" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+    <button onclick="calc()" style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">Calculate</button>
+    <input id = "answer" style=  "background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+</body>
+
+
+</head>
+
+
+
+</body>
+
+</html>

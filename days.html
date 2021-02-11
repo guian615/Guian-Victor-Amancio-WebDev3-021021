@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Click the button to display todays day of the week.</p>
+
+    <button onclick="myFunction()"> Today is? </button>
+
+    <p id="days"></p>
+
+    <script>
+        function myFunction() {
+            var d = new Date();
+            var days = d.getDay();
+            document.getElementById("days").innerHTML = days;
+            
+            switch(days) {
+                case 0:
+                document.write("<h3> Sunday </h3>");
+                    break;
+                case 1:
+                document.write("<h3> Monday </h3>");
+                    break;
+
+                case 2:
+                document.write("<h3> Tuesday </h3>");
+                    break;
+
+                case 3:
+                document.write("<h3> Wednesday </h3>");
+                    break;
+                case 4:
+                document.write("<h3> Thursday </h3>");
+                    break;
+
+                case 5:
+                document.write("<h3> Friday </h3>");
+                    break;
+                case 6:
+                document.write("<h3> Saturday </h3>");
+                    break;
+
+                default:
+                
+            }
+            var daysleft = 14 - d.getDay();
+            document.write(" <h2> And there are " + daysleft + " days left until next sunday </h2>");
+
+
+        }
+    </script>
+
+</body>
+
+</html>
